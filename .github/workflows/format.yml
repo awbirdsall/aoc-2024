@@ -1,17 +1,17 @@
-name: Test
+name: Format
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches: [ 'main' ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ 'main' ]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  test:
+  format:
     name: python
     runs-on: ubuntu-latest
     steps:
